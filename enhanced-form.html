@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>United Hearts Website</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<h1>Welcome to United Hearts</h1>
+<p>United by God’s love — helping the less fortunate in society.</p>
+
+<!-- LISTS SECTION -->
+<h2>Our Core Activities</h2>
+<ul>
+    <li>Charity Events</li>
+    <li>Feeding Programs</li>
+    <li>Educational Support</li>
+    <li>Clothing Donations</li>
+    <li>Medical Assistance</li>
+</ul>
+
+<!-- TABLE SECTION -->
+<h2>Upcoming Outreach Events</h2>
+<table border="1">
+    <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Location</th>
+    </tr>
+    <tr>
+        <td>11 May 2025</td>
+        <td>Feeding the Homeless</td>
+        <td>Nairobi CBD</td>
+    </tr>
+    <tr>
+        <td>15 June 2025</td>
+        <td>Clothes Donation Drive</td>
+        <td>Kibera</td>
+    </tr>
+    <tr>
+        <td>20 July 2025</td>
+        <td>School Support Program</td>
+        <td>Kayole</td>
+    </tr>
+</table>
+
+<!-- MEDIA SECTION -->
+<h2>United Hearts in Action</h2>
+<img src="logo.png" alt="United Hearts Outreach" width="400">
+<p>Watch our latest outreach video:</p>
+<video width="400" controls>
+    <source src="united.mp4" type="video/mp4">
+</video>
+<p>Listen to our next event audio message:</p>
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<!-- FORM SECTION -->
+<h2>Join United Hearts</h2>
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        First Name: <input type="text" name="fname" placeholder="Enter first name" required><br><br>
+        Last Name: <input type="text" name="lname" placeholder="Enter last name" required><br><br>
+        Email: <input type="email" name="email" placeholder="Enter email" required><br><br>
+        Phone: <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="07XXXXXXXX" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Participation Details</legend>
+        Choose Event:
+        <select name="event" required>
+            <option value="">--Select Event--</option>
+            <option value="feeding">Feeding the Homeless</option>
+            <option value="clothes">Clothes Donation Drive</option>
+            <option value="school">School Support Program</option>
+        </select><br><br>
+
+        Preferred Date: <input type="date" name="date" required><br><br>
+
+        Would you like to volunteer?
+        <input type="radio" name="volunteer" value="Yes" required> Yes
+        <input type="radio" name="volunteer" value="No" required> No
+    </fieldset>
+
+    <fieldset>
+        <legend>Message</legend>
+        <textarea name="message" placeholder="Write your message here..." rows="4" cols="30"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+</form>
+
+<!-- FOOTER -->
+<p>&copy; 2025 United Hearts. All Rights Reserved.</p>
+
+</body>
+</html>
